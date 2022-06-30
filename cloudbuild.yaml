@@ -1,1 +1,11 @@
-
+steps:
+  - name: python
+    entrypoint: pip
+    args: ["install", "-r", "requirements.txt","--user"]
+    dir: "test"
+  - name: python
+    entrypoint: python
+    args: ["main.py"]
+    dir: "logging-test"    
+options:
+ machineType: 'E2_HIGHCPU_8'
