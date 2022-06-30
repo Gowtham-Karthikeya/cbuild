@@ -6,6 +6,6 @@ steps:
   - name: python
     entrypoint: python
     args: ["main.py"]
-    dir: "logging-test"    
+    dir: "test"    
 options:
  machineType: 'E2_HIGHCPU_8'
